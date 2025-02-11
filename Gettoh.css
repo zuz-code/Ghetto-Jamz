@@ -1,0 +1,55 @@
+*{
+    padding: 0%;
+    margin: 0.5cm;
+    background-color: rgb(250, 184, 98);
+}
+.logo{
+    font-size: 70px;
+    font-weight: 800;
+    margin-left: 9cm;
+    font-family: fantasy;
+    box-shadow: 5px;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+ul li a:hover{
+    color: rgb(48, 102, 48);
+}
+.search{
+    width: 330px;
+    float: none;
+    margin-left: 5cm;
+}
+.srch{
+    font-family: monospace;
+    width: 800px;
+    height: 30px;
+    background: transparent;
+    border: 7px solid black;
+    color: black;
+    font-size: 35px;
+    float: none;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    background:none ;
+    color: darkturquoise;
+    font-size: 27px;
+    border-radius: 15px;
+    margin-left: 8cm;
+    font-family: monospace;
+    border: 3px solid black;
+}
+.footer{
+    background-color: rgb(94, 94, 240);
+    font-size: 43px;
+    padding: 10px;
+    border-radius: 15px;
+}
