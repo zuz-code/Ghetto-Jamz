@@ -1,0 +1,367 @@
+*{
+  padding: 0%;
+  margin: 0.5cm;
+  background-color: rgb(250, 184, 98);
+}
+#logonalogin{
+  background: #000;
+  display: flow-root;
+}
+#logonalogin img{
+  width: 5cm;
+  margin-left: 3%;
+}
+#logInbtn{
+  margin-top: 3%;
+  padding-bottom: 3px;
+  background: transparent;
+  border-radius: 20px;
+  outline: none;
+  border: #000;
+  width: 100px;
+  align-items: center;
+  height: 40px;
+  position: relative;
+  float: right;
+}
+#logonalogin button img{
+  width: 50px;
+}
+.nav {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: linear-gradient(120deg, rgb(158, 89, 6) , rgb(149, 235, 64));
+  color: #fff;
+}
+
+.nav .top {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .top .menu-btn {
+  border: none;
+  padding: 7px 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  background: linear-gradient(120deg, #f13939 , #fff);
+}
+.nav .top .menu-btn:hover{
+  color: orange;
+  background: #1876f3;
+  transition: all 0.5s ease;
+}
+.nav .list {
+  display: none;
+  transition: all .4s;
+}
+
+.nav .list li a {
+  display: block;
+  width: 100%;
+  padding: 10px 60px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all .4s;
+}
+.nav .list li a img{
+  width: 45px;
+  bottom: 0;
+  right: 5px;
+}
+.nav ul li a:hover {
+  background: rgb(255, 255, 255, .2);
+}
+.search-bar {
+  width: 300px;
+  height: 45px;
+  
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  border: 2px solid #1876f3;
+  box-shadow: 0 0 0 8px rgb(24, 118, 243, .3);
+  overflow: hidden;
+}
+
+.search-bar input {
+  width: 250px;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px 0 15px;
+}
+
+.search-bar button {
+  height: 100%;
+  width: 48px;
+  background: #1876f3;
+  border: none;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+#h1{
+  padding: 0%;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 1cm;
+  margin-left: 4%;
+  font-size: auto;
+  color: black;
+  font-weight: bold;
+  font-family: fantasy;
+}
+#musicitem{
+  margin: 1cm;
+  border-radius: 20px;
+  padding: 1.5cm;
+  margin-top: 1cm;
+  align-items: center;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px #000(0, 0, .5);
+  display: grid;
+  justify-content: center;
+  border: #6b0303 solid;
+}
+#musicitem img{
+  width: 100%;
+  height: 100%;
+}
+#musicitem video{
+  width: 100%;
+  height: 100%;
+}
+#musicinfo{
+  margin-top: 15px;
+  font-size: auto;
+  font-weight: bold;
+}
+#musicinfo a:hover{
+  color: rgb(255, 255, 3);
+  transition: all .3s ease;
+}
+#below{
+  margin-top: 30px;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+#below img{
+  width: 20px;
+}
+#download-btn{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background: linear-gradient(180deg, #f34b4b, #5c5151);
+  font-weight: bold;
+  border-radius: 20px;
+  height: 40px;
+}
+#download-btn:hover{
+  background: rgb(247, 226, 226);
+  transition: all 0.5s ease;
+}
+#musicitem div input{
+  background: transparent;
+  border: none;
+}
+.footer-container .box {
+  width: 250px;
+}
+.footer-container {
+  width: 97%;
+  background: cadetblue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial;
+}
+.footer-container .box h3{
+  color: rgb(1, 1, 73);
+  font-weight: bold;
+  margin-bottom: 1px;
+  font-size: 20px;
+}
+.footer-container .box ul li a{
+  display: block;
+  text-decoration: none;
+  color: rgb(1, 59, 1);
+  padding: 5px 0;
+  font-weight: bold;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.footer-container .box ul li a p{
+  margin-top: 10px;
+}
+.footer-container .box ul li a:hover{
+  color: #b10b0b;
+  background: rgb(247, 219, 199);
+  transition: all .5s ease;
+}
+.footer-container .box ul li a img{
+  width: 25px;
+  height: 25px;
+}
+.footer-container .box form {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-container .box form input,
+button {
+  padding: 8px 15px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  border: 1px solid #fff;
+}
+.footer-container .box form input:focus{
+  box-shadow: 0 0 0 4px rgb(255, 255, 255, .2);
+  transition: all .3s ease;
+}
+.footer-container .box form button {
+  background: orangered;
+  color: #fff;
+  cursor: pointer;
+}
+.footer-container .box form button:hover{
+  background-color: rgb(135, 199, 135);
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+footer {
+  width: 97.7%;
+  padding: 15px;
+  text-align: center;
+  background: #333;
+  color: #f8f5f5;
+}
+.container{
+  left: 35%;
+  bottom: 7%;
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid #500404;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  
+  justify-content: center;
+  align-items: normal;
+}
+.container .form-box{
+  width: 100%;
+  padding: 40px;
+  left: 7%;
+}
+.form-box h2{
+  font-size: 2em;
+  color: #000;
+  text-align: center;
+  left: 5%;
+}
+#more{
+  right: 0;
+  background: transparent;
+  border-radius: 20px;
+  border: #000 solid;
+  backdrop-filter: blur(20px);
+  font-size: 15px;
+  font-weight: bold;
+
+}
+#more :hover{
+  color: #000;
+  background: yellow;
+  transition: all .5s ease;
+}
+.login-form{
+  width: 300px;
+  padding: 40px;
+  padding-right: 60px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: #000;
+  margin: 10% auto;
+  box-shadow: 8px 8px 15px rgba(25, 3, 46, 0.5);
+  border-radius: 25px;
+  border: 2px solid #000 ;
+}
+.login-form label{
+  display: block;
+  width: 100%;
+  padding: 2px 0;
+  font-weight: bold;
+}
+.login-form input{
+  width: 100%;
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: rgb(235, 206, 154);
+}
+.login-form h2{
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.login-form input:focus{
+  box-shadow: 0 0 0 4px rgb(255, 255, 255, .2);
+}
+.login-form button{
+  width: 100%;
+  height: 42px;
+  margin-left: 8px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  background: linear-gradient(130deg, orange, white);
+  color: #500404;
+  font-weight: bold;
+  border-radius: 35px;
+  border: 2px solid;
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  letter-spacing: 1.5px;
+}
+.login-form button:hover{
+  background:linear-gradient(120deg, #777373, #2b75d6);
+  transition: all .5s ease;
+}
+.login-form label img{
+  width: 15px;
+}
+@media (max-widith:360px) {
+  .login-form{
+    width: 100%;
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+  }
+  
+}
+
+.login-form span{
+  display: flex;
+  align-items: center;
+}
+#artists{
+  margin: 5%;
+}
