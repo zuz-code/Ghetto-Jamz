@@ -48,51 +48,104 @@ background-size: auto;">
 </nav> 
 
 
-  <div>  
- <h1 id="h1">Artists</h1>
+  <div id="firsthd">  
+ <h1 id="h1">ARTISTS</h1>
 </div>
+    
 
 
-<div id="artists">
+
+<div id="allartists">
+  <h id="artistshead">ALL ARTISTS</h><br>
   <span id="oyimbaspan">
-    <button id="artistsbtn"><a href="">Jay Tway</a></button><button id="artistsbtn"><a href="">Jolasto</a></button>
-    <button id="artistsbtn"><a href="">F-Tron</a></button><button id="artistsbtn"><a href="">Jeg Tellem</a></button>
+    <button id="artistsbtn"><a href="jay tway.html">Jay Tway</a></button><button id="artistsbtn"><a href="">Jolasto</a></button><button id="artistsbtn"><a href="">F-Tron</a></button><button id="artistsbtn"><a href="">Jeg Tellem</a></button>
+    <button id="artistsbtn"><a href="jay tway.html">Andy Cee</a></button><button id="artistsbtn"><a href="">Mundo MGT</a></button><button id="artistsbtn"><a href="">Maximum</a></button><button id="artistsbtn"><a href="">Khamuna</a></button>
   </span>
 </div>
 
 
-<div class="footer-container">
-  
-  <div class="box">
-      <h3>Pages</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contactus.html">contact us</a></li>
-        <li><a href="contactus.html">Upload</a></li>
-        <li><a href="login.html"><img src="7856337.png"></a></li>
-      </ul>
-  </div>
 
 
-  <div class="box">
-    <h3>Follow us</h3>
-    <ul>
-        <li><a href="https://www.facebook.com/zuzerobertmark"><img src="facebook-app-round-icon - Copy.png"> Ghetto Jamz</a></li>
-        <li><a href="https://x.com/GhettoJamz?t=Lelmrez-vQoigvw-qmDDhA&s=09"><img src="logo-black.png"> GhettoJamz</a></li>
-        <li><a href="https://www.instagram.com/ghetto_jamz_mw?igsh=MXRnaThndjlraDdwMg=="><img src="Instagram_Glyph_Black.png"> Ghetto_Jamz_Mw</a></li>
-    </ul>
-</div>
+<div id="hiphop">
+  <h id="artistshead">HIPHOP Artists</h><br>
+  <span id="oyimbaspan">
+    <button id="artistsbtn"><a href="jay tway.html">Jay Tway</a></button><button id="artistsbtn"><a href="">Jolasto</a></button>
+    <button id="artistsbtn"><a href="">Jeg Tellem</a></button>
   
-<div class="box">
-  <h3><b>News Letter</b></h3>
-  <form action="">
-      <input type="email" placeholder="Email Address">
-      <button><b>Subscribe</b></button>
-  </form>
-  
+    
+    
+  </span>
 </div>
+
+
+
+<div id="dancehall">
+  <h id="artistshead">DANCEHALL Artists</h><br>
+  <span id="oyimbaspan">
+    <button id="artistsbtn"><a href="">F-Tron</a><button id="artistsbtn"><a href="">Andy Cee</a></button><button id="artistsbtn"><a href="">Maximum</a></button>
+  </span>
 </div>
+
+
+
+
+
+<div id="afro">
+  <h id="artistshead">AFRO Artists</h><br>
+  <span id="oyimbaspan">
+    <button id="artistsbtn"><a href="jay tway.html">Andy Cee</a></button><button id="artistsbtn"><a href="">Mundo MGT</a></button><button id="artistsbtn"><a href="">Khamuna</a></button>
+  </span>
+</div>
+
+
+
+<div id="amapiano">
+  <h id="artistshead">AMAPIANO Artists</h><br>
+  <span id="oyimbaspan">
+
+<button id="artistsbtn"><a href="">Khamuna</a></button>
+  </span>
+</div>
+
+
+
+
+<div id="regea">
+  <h id="artistshead">REGEA Artists</h><br>
+  <span id="oyimbaspan">
+  <button id="artistsbtn"><a href="">Maximum</a></button>
+  </span>
+</div>
+
+
+
+<div id="others">
+  <h id="artistshead">Other Artists</h><br>
+  <span id="oyimbaspan">
+  <button id="artistsbtn"><a href="">hhhh</a></button>
+  </span>
+</div>
+
+
+<script>
+  var backBtn = document.querySelector(".backBtn");
+  window.addEventListener("scroll", function(){
+    if (this.pageYOffset > 100) {
+      backBtn.classList.add("active");
+    } else {
+      backBtn.classList.remove("active");
+    }
+  });
+  backBtn.addEventListener("click", function(){
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  })
+</script>
+
 <footer>
+  <span id="follow-links"><a href="https://www.facebook.com/zuzerobertmark"><img src="facebook-app-round-icon - Copy.png"></a>|<a href="https://www.instagram.com/ghetto_jamz_mw?igsh=MXRnaThndjlraDdwMg=="><img src="Instagram_Glyph_Black.png"></a>|<a href="https://x.com/GhettoJamz?t=Lelmrez-vQoigvw-qmDDhA&s=09"><img src="logo-black.png"></a></span>
 <p>Copyright ©2025 GhettoJamz Allright reserved.</p>
 <img src="PSX_20250207_154803.png" style="width: 40px;">
 <img src="PSX_20250207_154511(1)(1).png" style="width: 40px;">
