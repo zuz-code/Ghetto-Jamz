@@ -3,7 +3,9 @@
     padding: 0;
     font-family: monospace;
 }
-
+body{
+  background-color: #fff;
+}
 #logonalogin{
   background: #000;
   display: flow-root;
@@ -43,32 +45,30 @@
 
 .nav .top .menu-btn {
   border: none;
-  padding: 5px 5px;
+  padding: 5px;
   color: #fff;
   cursor: pointer;
-  font-size: 15px;
-  background: linear-gradient(120deg, #f13939 , #fff);
-}
-.nav .top .menu-btn:hover{
-  color: orange;
   background: #1876f3;
-  transition: all 0.5s ease;
+  border: #000 1px solid;
+  margin-left: 0;
 }
 .nav .list {
   display: none;
   transition: all .4s;
-  text-align: center;
 }
 
 .nav .list li a {
   display: block;
   width: 100%;
-  padding: 10px 30px;
+  padding: 5px 30px;
+  font-weight: bold;
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
   transition: all .4s;
   list-style-type: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  
 }
 .nav .list li a img{
   width: 45px;
@@ -80,18 +80,18 @@
 }
 .search-bar {
   width: 300px;
-  height: 45px;
+  height: 25px;
   margin: auto;
   display: flex;
   align-items: center;
-  border-radius: 40px;
+  border-radius: 5px;
   border: 2px solid #1876f3;
   box-shadow: 0 0 0 8px rgba(12, 16, 20, 0.3);
   overflow: hidden;
 }
 
 .search-bar input {
-  width: 250px;
+  width: 300px;
   height: 100%;
   border: none;
   outline: none;
@@ -100,7 +100,7 @@
 
 .search-bar button {
   height: 100%;
-  width: 48px;
+  width: 30px;
   background: #1876f3;
   border: none;
   display: grid;
@@ -108,23 +108,19 @@
   cursor: pointer;
 }
 #firsthd{
- margin: 4rem;
+  display: flex;
  align-items: center;
- text-align: center;
  justify-items: center;
-
 }
 #h1{
   font-weight: bold;
   color: #886868;
   border-left: rgb(8, 8, 8) solid 20px;
-  padding: 4px;
-  width: 250px;
-  font-size: 35px;
   text-shadow: 5px 5px 1px #0a0101;
   font-style: italic;
   font-family: fantasy;
   letter-spacing: 5px;
+  margin-left: 5px;
 }
 #music-cont{
   display: flex;
@@ -136,11 +132,16 @@
   align-items: center;
   justify-content: center; 
   margin: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 1rem;
   background: transparent;
   backdrop-filter: blur(20px);
   box-shadow: 8px 8px 15px 10px rgba(25, 3, 46, 0.5);
+}
+#musicitem span p{
+  background-color: #f3d4d4;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
 }
 #musicitem img{
   margin-top: 2px;
@@ -161,17 +162,19 @@
 }
 #musicitem audio{
   margin-top: 20px;
+  padding: 1px;
+  background-color: #1876f3;
+
 }
 #musicinfo a:hover{
   color: rgb(100, 100, 8);
   transition: all .3s ease;
 }
 #below{
-  font-weight: bold;
   align-items: center;
   display: flex;
   text-align: center;
-  opacity: 50%;
+ 
 }
 #below img{
   width: 20px;
@@ -195,8 +198,18 @@
   transition: all 0.5s ease;
 }
 #musicitem div input{
-  background: transparent;
+  background-color: rgb(191, 150, 230);
   border: none;
+  width: 30px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+#musicitem span input{
+  background-color: rgb(191, 150, 230);
+  border: none;
+  width: 30px;
+  border-radius: 5px;
+  padding-left: 10px;
 }
 #follow-links img{
   width: 20px;
@@ -220,14 +233,15 @@ footer {
 }
 
 #more{
-  margin: 1cm;
+  margin: .5cm;
   background: transparent;
   border-radius: 10px;
-  border: #000 solid;
   backdrop-filter: blur(20px);
-  font-size: 15px;
   font-weight: bold;
+  border: none;
   padding: 5px;
+  box-shadow: 5px 5px 1px #0a0101;
+  
 }
 #more :hover{
   color: yellowgreen;
@@ -240,7 +254,7 @@ footer {
   background: transparent;
   backdrop-filter: blur(10px);
   color: #000;
-  margin: 10% auto;
+  margin: 5% auto;
   box-shadow: 8px 8px 15px rgba(25, 3, 46, 0.5);
   border-radius: 25px;
   border: 2px solid #000 ;
@@ -296,30 +310,16 @@ footer {
   display: flex;
   align-items: center;
 }
-#artistsbio{
-  display: flex;
-  margin: 2rem;
-  padding: 2rem;
-  background: yellow;
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  box-shadow: 8px 15px 10px rgba(25, 3, 46, 0.5);
-  align-items: center;
-}
 #genresid{
   display: grid;
   margin: 1rem;
   background: transparent;
   backdrop-filter: blur(20px);
-  box-shadow: 8px 8px 15px rgba(25, 3, 46, 0.5);
-  align-items: center;
+  box-shadow: 8px 8px 15px rgba(25, 3, 46, 0.5); 
   justify-items: center;
   text-align: center;
-  margin-top: 3rem;
 }
-#genresid div{
-  padding-top: .5cm;
-}
+
 #genresid div img{
   width: 25%;
   box-shadow: 3px 6px 7px #570505;
@@ -334,9 +334,14 @@ footer {
   border: none;
   border-bottom: firebrick solid 4px;
 }
+#genresid #ingenres{
+  display: flex;
+
+
+}
 #chambabtn{
   width: 100px;
-  height: 40px;
+  height: 25px;
   background: transparent;
   font-weight: bold;
   color: #500404;
@@ -351,6 +356,13 @@ footer {
   width: 150px;
   transition: all .3s ease-in-out;
 }
+#artistsbio{
+  display: flex;
+  background: rgb(233, 233, 65);
+  backdrop-filter: blur(20px);
+  box-shadow: 8px 15px 10px rgba(25, 3, 46, 0.5);
+  align-items: center;
+}
 #biohead{
   top: 0%;
   font-weight: bold;
@@ -362,8 +374,6 @@ footer {
   width: 50%;
 }
 #artistsbio span{
-  top: 0%;
-  padding: 3px;
   font-weight: bold;
 }
 #artistshead{
@@ -377,83 +387,23 @@ footer {
 }
 #allartists{
   margin: 2%;
+  margin-top: 30px;
   background-color: #a59a9a;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(25, 3, 46, 0.5);
-  text-align: center;
-}
-#hiphop{
-  margin: 2%;
-  background-color: #222121;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(25, 3, 46, 0.5);
-  text-align: center;
-}
-#topartists{
-  margin: 2%;
-  background-color: darkgoldenrod;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-#oyimbaspan img{
-  width: 20%;
-}
-#dancehall{
-  margin: 2%;
-  background-color: darkgoldenrod;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(25, 3, 46, 0.5);
-  text-align: center;
-}
-#afro{
-  margin: 2%;
-  background-color: rgb(87, 107, 87);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(25, 3, 46, 0.5);
-  text-align: center;
-}
-#amapiano{
-  margin: 2%;
-  background-color: #0f0f0f;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(25, 3, 46, 0.5);
-  text-align: center;
-}
-#regea{
-  margin: 2%;
-  background-color: #2b0202;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(25, 3, 46, 0.5);
-  text-align: center;
-}
-#others{
-  margin: 2%;
-  background-color: olive;
-  padding: 20px;
-  border-radius: 10px;
+  border-radius: 3px;
   box-shadow: 5px 5px 10px rgba(25, 3, 46, 0.5);
   text-align: center;
 }
 #oyimbaspan{
-  gap: 20px;
+  gap: 10px;
   margin: 0;
 }
 #artistsbtn{
   background-color: transparent;
   border: #fff solid 2px;
-  margin: 10px;
+  margin: 5px;
   width: 2cm;
   height: 1cm;
-  border-radius: 10px;
-  color: #1876f3;
-  font-size: 13px;
+  border-radius: 5px;
   font-weight: bold;
 }
 #artistsbtn:hover{
@@ -479,4 +429,16 @@ footer {
 }
 #backBtn.active{
   right: 20px;
+}
+#adds{
+  padding: 1rem;
+  margin: .5rem;
+  background-color: #f35858;
+}
+#adds img{
+  width: 100%;
+}
+#adds p{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
