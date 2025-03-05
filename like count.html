@@ -9,25 +9,27 @@
 </head>
 <body>
     <!-- like button-->
-     <button class="like-button" onclick="tikakamize()">like me
+     <button class="like-button" onclick="tikakamizeClickTracker()">like me
         <span class="like-count">0</span>
     </button>
 
 
 
-        <a style="background:#920606" href="Tikakamize__Jay_Tway_ft_Wikise[GhettoJamz].mp3.mp3" 
-download="" onclick="like_download('mfp6YVOrhuI','download','')" 
-class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-    DOWNLOAD </a>
-    <span class="text-3xl font-bold text-gray-900 dark:text-white" id="downmfp6YVOrhuI"><i class="fas fa-download" style="color:#10B981; margin-right:.5rem"></i> </span>
-    <script>
+       <Script>
+        const like_button=document.getElementById("like-button")
+        const total_likes=document.getElementById("like-count")
+        function add_like(){
+            like_button.setAttribute("id","like-button")
+            total_likes.innerHTML=parseInt(like-count.innerHTML)+1
+        }
 
+        function remove_like(){
+            like_button.setAttribute("id","like-button")
+            total_likes.innerHTML=parseInt(like-count.innerHTML)-1
+        }
 
-
-
-
-        
-    </script>
+        like_button.onclick=add_like();
+       </Script>
 </body>
 
 </html>
